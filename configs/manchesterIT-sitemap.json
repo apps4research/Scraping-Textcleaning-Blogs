@@ -1,0 +1,96 @@
+{
+  "_id": "manchesterIT",
+  "startUrl": [
+    "https://research-it.manchester.ac.uk/news/?page=1"
+  ],
+  "selectors": [
+    {
+      "id": "article",
+      "parentSelectors": [
+        "_root",
+        "next"
+      ],
+      "type": "SelectorLink",
+      "selector": "h4 a",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "title",
+      "parentSelectors": [
+        "article"
+      ],
+      "type": "SelectorText",
+      "selector": "h1.mb-4",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "subtitle",
+      "parentSelectors": [
+        "article"
+      ],
+      "type": "SelectorText",
+      "selector": ".lead p",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "content",
+      "parentSelectors": [
+        "article"
+      ],
+      "type": "SelectorText",
+      "selector": "article div.rich-text",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "author",
+      "parentSelectors": [
+        "article"
+      ],
+      "type": "SelectorText",
+      "selector": ".page-author small",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "published",
+      "parentSelectors": [
+        "article"
+      ],
+      "type": "SelectorText",
+      "selector": "li:nth-of-type(3) small",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "revised",
+      "parentSelectors": [
+        "article"
+      ],
+      "type": "SelectorText",
+      "selector": "li:nth-of-type(4) small",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "next",
+      "parentSelectors": [
+        "_root",
+        "next"
+      ],
+      "type": "SelectorLink",
+      "selector": "li:nth-of-type(n+3) a.page-link",
+      "multiple": true,
+      "delay": 0
+    }
+  ]
+}

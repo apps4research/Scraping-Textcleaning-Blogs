@@ -1,0 +1,82 @@
+{
+    "_id": "rse-sheffield",
+    "startUrl":
+    [
+        "https://rse.shef.ac.uk/blog/"
+    ],
+    "selectors":
+    [
+        {
+            "id": "article",
+            "parentSelectors":
+            [
+                "_root",
+                "next"
+            ],
+            "type": "SelectorLink",
+            "selector": "h2 a",
+            "multiple": true,
+            "delay": 0
+        },
+        {
+            "id": "title",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": ".col-12 h1",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "content",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "div.col-12",
+            "multiple": true,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "author",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "div.media:nth-of-type(1) strong",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "published",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "div:nth-of-type(2) strong",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "next",
+            "parentSelectors":
+            [
+                "_root",
+                "next"
+            ],
+            "type": "SelectorLink",
+            "selector": "a.next",
+            "multiple": true,
+            "delay": 0
+        }
+    ]
+}

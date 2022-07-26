@@ -1,0 +1,57 @@
+{
+    "_id": "research-software-alliance",
+    "startUrl":
+    [
+        "https://www.researchsoft.org/blog/"
+    ],
+    "selectors":
+    [
+        {
+            "id": "article",
+            "parentSelectors":
+            [
+                "_root"
+            ],
+            "type": "SelectorLink",
+            "selector": ".col a",
+            "multiple": true,
+            "delay": 0
+        },
+        {
+            "id": "title",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": ".text-left h2",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "published",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": ".badge-primary time",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "content",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "div.content-body",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        }
+    ]
+}

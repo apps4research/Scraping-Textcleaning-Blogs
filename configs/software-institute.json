@@ -1,0 +1,94 @@
+{
+    "_id": "software-institute",
+    "startUrl":
+    [
+        "https://www.software.ac.uk/blog"
+    ],
+    "selectors":
+    [
+        {
+            "id": "article",
+            "parentSelectors":
+            [
+                "_root",
+                "next"
+            ],
+            "type": "SelectorLink",
+            "selector": "h2 a",
+            "multiple": true,
+            "delay": 0
+        },
+        {
+            "id": "title",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "h1 span",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "content",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": ".layout__region > div:nth-of-type(1) div",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "author",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "#submitted span span",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "published",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": "#submitted span:nth-of-type(2)",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "tags",
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "type": "SelectorText",
+            "selector": ".layout-sidebar-news_list > div",
+            "multiple": false,
+            "delay": 0,
+            "regex": ""
+        },
+        {
+            "id": "next",
+            "parentSelectors":
+            [
+                "_root",
+                "next"
+            ],
+            "type": "SelectorLink",
+            "selector": ".pager__item a",
+            "multiple": true,
+            "delay": 0
+        }
+    ]
+}

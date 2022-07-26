@@ -1,0 +1,94 @@
+{
+    "_id": "bssw",
+    "startUrl":
+    [
+        "https://bssw.io/blog_posts"
+    ],
+    "selectors":
+    [
+        {
+            "delay": 0,
+            "id": "article",
+            "multiple": true,
+            "parentSelectors":
+            [
+                "_root",
+                "load-more"
+            ],
+            "selector": "div.event-blog-row:nth-of-type(n+1) a",
+            "type": "SelectorLink"
+        },
+        {
+            "delay": 0,
+            "id": "title",
+            "multiple": false,
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "regex": "",
+            "selector": "h1",
+            "type": "SelectorText"
+        },
+        {
+            "delay": 0,
+            "id": "subtitle",
+            "multiple": false,
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "regex": "",
+            "selector": ".post-content p:nth-of-type(2)",
+            "type": "SelectorText"
+        },
+        {
+            "delay": 0,
+            "id": "content",
+            "multiple": false,
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "regex": "",
+            "selector": ".page-content div.row",
+            "type": "SelectorText"
+        },
+        {
+            "delay": 0,
+            "id": "published",
+            "multiple": false,
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "regex": "(?![Published])([A-Za-z0-9, ]+)+",
+            "selector": "div.col-xl-3:nth-of-type(1)",
+            "type": "SelectorText"
+        },
+        {
+            "delay": 0,
+            "id": "author",
+            "multiple": false,
+            "parentSelectors":
+            [
+                "article"
+            ],
+            "regex": "",
+            "selector": "a.author",
+            "type": "SelectorText"
+        },
+        {
+            "delay": 0,
+            "id": "load-more",
+            "multiple": true,
+            "parentSelectors":
+            [
+                "_root",
+                "load-more"
+            ],
+            "selector": "a.load-more",
+            "type": "SelectorLink"
+        }
+    ]
+}
