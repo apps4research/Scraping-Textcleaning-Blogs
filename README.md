@@ -3,7 +3,7 @@
 
 ## Config files
 
-Configuration files (in scraper-configs folder) for webscraper.io browser extension to scrape data from specific blogs.
+Configuration files (in "configs" folder) for webscraper.io browser extension to scrape data from specific blogs.
 
 ## R-Scripts
 
