@@ -8,3 +8,5 @@ Configuration files (in "configs" folder) for webscraper.io browser extension to
 ## R-Scripts for cleaning
 
 A collection of R-Scripts to normalize and clean blog data, and create data subsets per blog account.
+
+Tina Keil, in collaboration with Melanie Langer and Mark Levine, Lancaster University, UK
